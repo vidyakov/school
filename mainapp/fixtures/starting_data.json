@@ -1,0 +1,65 @@
+[
+  {
+    "model": "mainapp.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Python"
+    }
+  },
+  {
+    "model": "mainapp.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Java Script"
+    }
+  },
+  {
+    "model": "mainapp.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Go"
+    }
+  },
+
+
+  {
+    "model": "mainapp.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Sasha",
+      "second_name": "Vidyakov",
+      "description": "Junior Python Web Developer",
+      "tag": 1
+    }
+  },
+
+
+  {
+    "model": "mainapp.course",
+    "pk": 1,
+    "fields": {
+      "date": "2020-07-21",
+      "name": "Starting Java Script",
+      "description": "Js js",
+      "img": "path",
+      "price": 999,
+      "level": "e",
+      "author": 1,
+      "tag": 2
+    }
+  },
+  {
+    "model": "mainapp.course",
+    "pk": 2,
+    "fields": {
+      "date": "2020-07-21",
+      "name": "Starting Python",
+      "description": "Py py",
+      "img": "path",
+      "price": 1500,
+      "level": "e",
+      "author": 1,
+      "tag": 1
+    }
+  }
+]

@@ -1,0 +1,30 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Школа
+{% endblock title %}
+
+{% block content  %}
+<section class="all-courses">
+    {% for course in object_list %}
+        <article class="course">
+            <img src="{% static '/img/course1.png' %}" alt="" class="course-img">
+            <div class="author-info">
+                <img src="{% static '/img/person-circle-outline.svg' %}" alt="" class="author-avatar">
+                <h2 class="author-name">Sasha Vidyakov</h2>
+            </div>
+            <h2 class="course-title">{{ course.name }}</h2>
+            <div class="course-info">
+                <div class="level-info">
+                    <div class="level"></div>
+                    <span class="level-title">Начальный</span>
+                </div>
+                <a href="{% url 'main:course' course.pk %}" class="start-learning">Подробнее<img
+                        src="{% static '/img/arrow-forward-outline.svg' %}" alt=""></a>
+            </div>
+        </article>
+    {% endfor %}
+</section>
+{% endblock content %}

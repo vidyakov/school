@@ -1,0 +1,35 @@
+.course-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.start {
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.course-info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.course-title {
+    padding: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 34px;
+    border-bottom: 1px solid #4f4f4f;
+}
+
+.for-author {
+    margin-top: 20px;
+}
+
+.author-info {
+    padding: 5px;
+}
+
+.course-descr {
+    margin-top: 30px;
+}

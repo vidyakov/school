@@ -1,0 +1,25 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static '/css/course-page.css' %}">
+{% endblock css %}
+
+{% block content %}
+    <section class="course-page">
+        <div class="course-info">
+            <h1 class="course-title">{{ object.name }}</h1>
+            <span class="for-author">Курс разработан:</span>
+            <div class="author-info">
+                <img src="{% static '/img/person-circle-outline.svg' %}" alt="" class="author-avatar">
+                <h2 class="author-name">{{ object.author }}</h2>
+            </div>
+            <p class="course-descr">{{ object.description }}</p>
+        </div>
+        <a href="#" class="start btn btnPrimary">Начать учиться!</a>
+    </section>
+{% endblock content %}
